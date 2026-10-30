@@ -1,21 +1,27 @@
 package strings
 
-// Erwartet einen string s und zählt, wie oft der Buchstabe 'A' in s vorkommt.
+// Erwartet einen string s und zählt,
+// wie oft der Buchstabe 'A' in s vorkommt.
 func CountA(s string) int {
-	// TODO
-	return 0
-}
+	zaehler := 0
 
-// Erwartet einen string s und einen Buchstaben c.
-// Zählt, wie oft c in s vorkommt.
-func CountChar(s string, c rune) int {
-
-	result := 0
-	for _, char := range s {
-		if char == c {
-			result++
+	for _, element := range s {
+		if element == 'A' {
+			zaehler++
 		}
 	}
-	return result
 
+	return zaehler
 }
+
+// func CountA(s string) int {
+// 	zaehler := 0
+//
+// 	for i := range s {
+// 		if s[i] == 'A' {
+// 			zaehler++
+// 		}
+// 	}
+//
+// 	return zaehler
+// }

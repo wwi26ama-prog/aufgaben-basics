@@ -14,16 +14,3 @@ func ExampleCountA() {
 	// 5
 	// 0
 }
-
-func ExampleCountChar() {
-	fmt.Println(CountChar("ABC", 'A'))
-	fmt.Println(CountChar("ABCABC", 'A'))
-	fmt.Println(CountChar("AAAABBBA", 'A'))
-	fmt.Println(CountChar("DEFGH", 'A'))
-
-	// Output:
-	// 1
-	// 2
-	// 5
-	// 0
-}
