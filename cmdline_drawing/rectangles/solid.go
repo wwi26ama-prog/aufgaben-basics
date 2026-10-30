@@ -1,18 +1,20 @@
 package rectangles
 
-import "fmt"
-
 // Erwartet zwei Seitenlängen `height` und `width`.
 // Zeichnet ein Rechteck mit diesen Seitenlängen auf der Konsole.
 // Das Rechteck soll komplett mit `#`-Zeichen gefüllt sein.
 func DrawSolidRectangle(height, width int) {
-
-	// Wiederhole so oft, wie es Zeilen geben muss:
-	for range height {
-		// Schreibe eine Zeile
-		for range width {
-			fmt.Print("#")
-		}
-		fmt.Println()
-	}
+	DrawRectangle(height, width, "#", "#")
 }
+
+// func DrawSolidRectangle(height, width int) {
+//
+// 	// Wiederhole so oft, wie es Zeilen geben muss:
+// 	for range height {
+// 		// Schreibe eine Zeile
+// 		for range width {
+// 			fmt.Print("#")
+// 		}
+// 		fmt.Println()
+// 	}
+// }
